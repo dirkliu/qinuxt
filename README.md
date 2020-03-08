@@ -1,0 +1,2 @@
+# qinuxt
+nuxt项目
