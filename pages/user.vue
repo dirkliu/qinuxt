@@ -1,3 +1,3 @@
 <template>
-	<div class="">用户中心</div>
+	<div class="user-center">用户中心</div>
 </template>
