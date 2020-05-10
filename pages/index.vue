@@ -1,51 +1,69 @@
 <template>
-  <div class="container">
-    <ul>
-      <li><a href="/product">产品</a></li>
-      <li><a href="/user">用户</a></li>
-    </ul>
-  </div>
+	<div class="home">
+  	<div class="header">
+    	<h1>KiddCn 一条码虫的实验工厂</h1>
+  	</div>
+  	<article class="main">
+    	<h1>计划中的事情：</h1>
+    	<ul>
+      	<li><a href="/#/clock">canvas时钟</a></li>
+      	<li><a href="/#/icons">css绘制图标</a></li>
+      	<li><a href="/#/chat">websockets</a></li>
+    	</ul>
+  	</article>
+  	<div class="footer">
+    	copyright Jason 7
+  	</div>
+	</div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
+	export default {
+		data () {
+			return {}
+		}
+	}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  * {
+    font-family: "microsoft yahei";
+  }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+  .header {
+    padding: 30px 0;
+    background-color: #39f;
+    background-image: linear-gradient(to left, #f00 0%, #ff0 20%, #0f0 50%, #0ff 65%, #00f 80%, #f0f 100%);
+  }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+  .header h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+  }
 
-.links {
-  padding-top: 15px;
-}
-</style>
+  footer {
+    line-height: 50px;
+    color: #000;
+  }
+
+  .rainbow {
+    width: 400px;
+    height: 200px;
+    border-radius: 200px 200px 0 0;
+    background-color: #7367f3;
+    overflow: hidden;
+  }
+  .rainbow::after {
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    display: block;
+    content: "";
+    background: -webkit-radial-gradient(farthest-side, #fff 50%, #f0f, #00f, #0ff, #0f0, #ff0, #f00); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(farthest-side, #fff 50%, #f0f, #00f, #0ff, #0f0, #ff0, #f00); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(farthest-side, #fff 50%, #f0f, #00f, #0ff, #0f0, #ff0, #f00); /* Firefox 3.6 - 15 */
+    background: radial-gradient(farthest-side, #fff 50%, #f0f, #00f, #0ff, #0f0, #ff0, #f00); /* 标准的语法 */    
+  }
+  </style>

@@ -1,5 +1,5 @@
 
-export default {
+module.exports = {
   mode: 'universal',
   /*
   ** Headers of the page
@@ -40,6 +40,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios'
   ],
   /*
   ** Build configuration
