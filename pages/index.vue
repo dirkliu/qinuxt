@@ -6,9 +6,9 @@
   	<article class="main">
     	<h1>计划中的事情：</h1>
     	<ul>
-      	<li><a href="/#/clock">canvas时钟</a></li>
-      	<li><a href="/#/icons">css绘制图标</a></li>
-      	<li><a href="/#/chat">websockets</a></li>
+      	<li><a href="/clock">canvas时钟</a></li>
+      	<li><a href="/icons">css绘制图标</a></li>
+      	<li><a href="/chat">websockets</a></li>
     	</ul>
   	</article>
   	<div class="footer">
